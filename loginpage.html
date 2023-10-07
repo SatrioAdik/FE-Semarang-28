@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Sign in</title>
+</head>
+<body>
+    <section id="loginpage" style="position: relative;">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="images/loginvideo.mp4" type="video/mp4">
+        </video>
+        <div class="centered-container">
+            <div class="container">
+                <h2 style="font-size: larger">Welcome Back!</h2>
+                <form id="loginForm" action="/login" class="login-form">
+                    <label for="psw" class="login-label"><b>Password</b></label>
+                    <input type="username" placeholder="username" name="userName" id="username" required class="login-input">
+                
+                    <label for="psw" class="login-label"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" id="password" required class="login-input">
+                
+                    <button type="submit" name="login" id="login" class="login-button">Sign in</button>
+                
+                    <div class="login-help">
+                    <p>Forgot your password?<a href="forgetpw.html">Click here to reset it.</a>
+                        <br>
+                    Don't have Account?<a href="register.html">Register Here.</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script src="/FEretty/js/loginpage.js"></script>
+</body>
+</html>

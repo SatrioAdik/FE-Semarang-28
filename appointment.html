@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>See available doctors</title>
+</head>
+<body>
+    <!-- Make appointment -->
+    <section id="appointment" style="position: relative;">
+        <video autoplay loop muted playsinline class="appointment-video">
+            <source src="images/appointmentvideo.mp4" type="video/mp4">
+        </video>
+        <div class="container"> 
+            <h1>Healthcare Appointment</h1>
+            <form id="appointmentForm" method="POST" style="margin-left: auto;">
+                <label for="patientname">Full Name:</label>
+                <input type="text" id="patientname" name="name" required><br>
+                <label for="doctor">Select doctor:</label>
+                <select id="doctor" name="doctor" style="padding: 20px">
+                    <option value="Sarah Johnson">Sarah Johnson</option>
+                    <option value="John Coltrane">John Coltrane</option>
+                    <option value="Jimmi Multhazam">Jimmi Multhazam</option>
+                    <option value="Jimi Hendro">Jimi Hendro</option>
+                    <option value="David flyin">david flyin</option>
+                </select>
+                <label for="clinic">Select Clinic:</label>
+                <select id="clinic" name="clinic" style="padding: 20px">
+                    <option value="Pediatric clinic">Pediatric Clinic</option>
+                    <option value="Dental clinic">Dental Clinic</option>
+                    <option value="General clinic">General Clinic</option>
+                    <option value="Cardiology clinic">Cardiology</option>
+                    <option value="Dermatology clinic">Dermatology</option>
+                    <option value="Emergency Medicine clinic">Emergency Medicine</option>
+                    <option value="Gastroenterology clinic">Gastroenterology</option>
+                    <option value="Neurology clinic">Neurology</option>
+                </select><br>
+                <label style="padding: 20px" for="date">Select Appointment Date: </label>
+                <input type="date" id="date" name="date" required>
+                <input type="submit"  id ="submitAppointment"value="Submit">
+            </form>
+            <div id="bookingDetails"></div>
+        </div>
+    </section>
+</body>
+<script src="js/appointment.js">
+</script>
+</html>
