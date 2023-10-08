@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const dateParts = rawDate.split("-");
         const formattedDate = `${dateParts[0]}-${dateParts[1]}-${dateParts[2]}`;
 
-        const baseURL = 'http://localhost:3600';
+        const baseURL = 'http://be-semarang-28-production.up.railway.app';
 
         const responseBookings = await fetch(baseURL + '/bookings', {
             method: "POST",
