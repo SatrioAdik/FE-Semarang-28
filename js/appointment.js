@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const bookingDetailsContainer = document.getElementById("bookingDetails");
             bookingDetailsContainer.innerHTML = bookingDetailsHTML;
         } else {
-            console.error("Error:", responseBookings.statusText);
+            console.error("Error:", responseBookings);
         }
     });
 });
